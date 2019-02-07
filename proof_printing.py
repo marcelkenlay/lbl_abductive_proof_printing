@@ -37,6 +37,10 @@ def build_params(params):
     return string + ")"
 
 
+def succesful_consistency_check(all_abduced):
+    return [FALSITY, abduced_list(all_abduced)]
+
+
 def abduced_list(abduced):
     string = "\t△ = {"
     string = append_list_to_string(abduced, string)
